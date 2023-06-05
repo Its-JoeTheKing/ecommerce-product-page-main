@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="nav-mobile">
+      <li>Collections</li>
+      <li>Men</li>
+      <li>Women</li>
+      <li>About</li>
+      <li>Contact</li>
+  </div>
+  <header class="nav-bar">
+    <ul>
+      <img src="./images/icon-menu.svg" id="menu" class="menu" alt="">
+      <img src="./images/logo.svg" class="logo" alt="">
+      <li>Collections</li>
+      <li>Men</li>
+      <li>Women</li>
+      <li>About</li>
+      <li>Contact</li>
+      <img src="./images/icon-cart.svg" alt="" onclick="showCart()" class="cart">
+      <img src="./images/image-avatar.png" alt="" class="avatar">
+    </ul>
+  </header>
+  <div class="carts" id="cart">
+    <div class="cart-head">
+      Cart
+    </div>
+    <div class="cart-body">
+      <p>
+        Your Cart is Empty
+      </p>
+    </div>
+  </div>
+  <div class="cont">
+    <section class="sec-1">
+      <div class="prev-2" onclick="prev()"><img src="./images/icon-previous.svg" alt=""></div>
+      <div class="next-2" onclick="next()"><img src="./images/icon-next.svg" alt=""></div>
+      <img id="big-img" src="./images/image-product-1.jpg" alt="" srcset="">
+      <div class="imgs">
+        <img src="./images/image-product-1-thumbnail.jpg" onclick="clickImg(1)" id="module-1" alt="">
+        <img src="./images/image-product-2-thumbnail.jpg" onclick="clickImg(2)" id="module-2" alt="">
+        <img src="./images/image-product-3-thumbnail.jpg" onclick="clickImg(3)" id="module-3" alt="">
+        <img src="./images/image-product-4-thumbnail.jpg" onclick="clickImg(4)" id="module-4" alt="">
+      </div>
+    </section>
+    <section class="sec-2">
+      <h3 class="mini-tit">SNEAKER COMPANY</h3>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="proc">
+        <div class="price">
+          <h2>$125.00</h2>
+          <p class="pr">50%</p>
+        </div>
+        <s>$250.00</s>
+      </div>
+      <div class="command">
+        <div class="quant">
+          <button onclick="decrease()"><img src="./images/icon-minus.svg" alt=""></button>
+          <p id="quantity">0</p>
+          <button onclick="increase()"><img src="./images/icon-plus.svg" alt=""></button>
+        </div>
+        <button class="buy"><img src="./images/icon-cart-white.svg" alt=""> Add to cart</button>
+      </div>
+    </section>
+  </div>
+  <div class="overlay">
+    <section class="sec-1">
+      <img src="./images/icon-close.svg" class="close" id="close" alt="">
+      <img id="big-img-over" src="./images/image-product-1.jpg" alt="" srcset="">
+      <div class="prev" onclick="prev('over')"><img src="./images/icon-previous.svg" alt=""></div>
+      <div class="next" onclick="next('over')"><img src="./images/icon-next.svg" alt=""></div>
+      <div class="imgs">
+        <img src="./images/image-product-1-thumbnail.jpg" onclick="clickImg(1)" id="module-1" alt="">
+        <img src="./images/image-product-2-thumbnail.jpg" onclick="clickImg(2)" id="module-2" alt="">
+        <img src="./images/image-product-3-thumbnail.jpg" onclick="clickImg(3)" id="module-3" alt="">
+        <img src="./images/image-product-4-thumbnail.jpg" onclick="clickImg(4)" id="module-4" alt="">
+      </div>
+    </section>
+  </div>
+  <!-- 
+   -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script src="script.js"></script>
+</html>
