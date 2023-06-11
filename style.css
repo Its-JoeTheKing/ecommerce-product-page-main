@@ -347,7 +347,6 @@ s {
 @media screen and (max-width: 700px) {
     .nav-mobile {
         position: fixed;
-        display: none;
         flex-flow: column;
         justify-content: center;
         align-items: center;
@@ -357,6 +356,7 @@ s {
         height: 100%;
         background: white;
         color: hsl(220, 13%, 13%);
+        display: none;
     }
     #menu {
         display: block;
